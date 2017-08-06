@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ConstraintLayout"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.lijiuling.gitcode.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.lijiuling.gitcode.CustomvView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            custom:layout_constraintBottom_toBottomOf="@+id/ConstraintLayout"
+            custom:layout_constraintTop_toTopOf="@+id/ConstraintLayout"
+            custom:layout_constraintLeft_toLeftOf="@+id/ConstraintLayout"
+            custom:layout_constraintRight_toRightOf="@+id/ConstraintLayout"
+            custom:textTitle="678009"
+            custom:textTitleColor="@color/textColor"
+            custom:textTitleSize="100sp" />
+
+
+
 
 </android.support.constraint.ConstraintLayout>
